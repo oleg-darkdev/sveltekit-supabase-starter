@@ -1,17 +1,25 @@
 <script>
-	import { navigating } from '$app/stores';
-	import Nav from './Nav.svelte';
-	import PreloadingIndicator from './PreloadingIndicator.svelte';
+	import '../app.css';
+	import { Header, Footer, } from '$widgets';
+
+
 
 	const { children } = $props();
 </script>
 
-{#if $navigating}
-	<PreloadingIndicator />
-{/if}
+<Header />
 
-<Nav />
-
-<main>
+<main class="overflow-hidden">
 	{@render children()}
 </main>
+
+<Footer />
+
+
+
+<style lang="postcss">
+
+</style>
+
+
+
