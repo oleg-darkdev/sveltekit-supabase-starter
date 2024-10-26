@@ -4,3 +4,10 @@
 /.netlify
 /.svelte-kit
 /.vercel
+/src/del
+.env
+.env.*
+!.env.example
+/coverage
+yarn-error.log
+/.vercel
